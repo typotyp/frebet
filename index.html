@@ -1,0 +1,216 @@
+<html>
+ <head>
+  <title>
+   Login Page
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f8f9fa, #e9ecef);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+        }
+        .logo {
+            font-size: 10px;
+            color: #1877f2;
+            margin-bottom: 20px;
+        }
+        .settings-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .profile img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .profile .name {
+            flex-grow: 1;
+            text-align: left;
+            font-size: 16px;
+            color: #333;
+        }
+        .profile .arrow {
+            font-size: 18px;
+            color: #333;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #1877f2;
+            border-radius: 20px;
+            text-decoration: none;
+            color: #1877f2;
+            font-size: 16px;
+        }
+        .button.primary {
+            background: #1877f2;
+            color: #fff;
+        }
+        .meta-logo {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+        .slider-container {
+			overflow: hidden;
+			width: 30%; /* make the slider container width adjust to the screen size */
+		}
+		
+		.slider-inner {
+			display: flex;
+			flex-direction: row;
+			transition: transform 0.5s ease-in-out;
+		}
+		
+		.slider-image {
+			width: 100%; /* make the image width adjust to the slider container width */
+			height: auto; /* make the image height adjust to the image width */
+			margin: 0px;
+			object-fit: cover; /* make the image cover the entire slider container */
+		}
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <i class="fas fa-cog settings-icon">
+   </i>
+   <div class="logo">
+   	<center>
+    <div class="slider-container">
+		<div class="slider-inner">
+			<img src="p1.jpg" alt="p1" class="slider-image">
+			<img src="p2.jpg" alt="p2" class="slider-image">
+				<img src="p3.jpg" alt="p3" class="slider-image">
+					
+			<!-- Add more images here -->
+		</div>
+	</div>
+	</center>
+    </i>
+   </div>
+   <a class="button" href="#">
+   <div class="profile">
+    <img alt="Profile picture of BotKu Cuan" height="50" src="1.jpg" width="50"/>
+    <div class="name">
+     678 LUCKY
+    </div>
+    <i class="fas fa-chevron-right arrow">
+    </i>
+   </div>
+   </a>
+   <a class="button" href="#">
+   <div class="profile">
+    <img alt="Profile picture of Cuan Sharing" height="50" src="2.jpg" width="50"/>
+    <div class="name">
+     JAYA SLOT
+    </div>
+    <i class="fas fa-chevron-right arrow">
+    </i>
+   </div>
+   </a>
+   <a class="button" href="#">
+   <div class="profile">
+    <img alt="Profile picture of Dani Black Pod" height="50" src="3.jpg" width="50"/>
+    <div class="name">
+     REJEKI BET
+    </div>
+    <i class="fas fa-chevron-right arrow">
+    </i>
+   </div>
+   </a>
+   <a class="button" href="#">
+   <div class="profile">
+    <img alt="Profile picture of Dani Black Pod" height="50" src="4.jpg" width="50"/>
+    <div class="name">
+     898a.com
+    </div>
+    <i class="fas fa-chevron-right arrow">
+    </i>
+   </div>
+   </a>
+   <a class="button" href="#">
+   <div class="profile">
+    <img alt="Profile picture of Dani Black Pod" height="50" src="5.jpg" width="50"/>
+    <div class="name">
+     GEMS 365
+    </div>
+    <i class="fas fa-chevron-right arrow">
+    </i>
+   </div>
+   </a>
+   <a class="button" href="#">
+   <div class="profile">
+    <img alt="Profile picture of Dani Black Pod" height="50" src="6.jpg" width="50"/>
+    <div class="name">
+     REMI 101
+    </div>
+    <i class="fas fa-chevron-right arrow">
+    </i>
+   </div>
+   </a>
+   <a class="button" href="#">
+   <div class="profile">
+    <img alt="Profile picture of Dani Black Pod" height="50" src="7.jpg" width="50"/>
+    <div class="name">
+     SPIN HARTA
+    </div>
+    <i class="fas fa-chevron-right arrow">
+    </i>
+   </div>
+   </a>
+   <a class="button primary" href="#">
+    FREE BET SEMUANYA 
+   </a>
+   <a class="button" href="#">
+    contoh masukin nomber hp nya 827393937818
+   </a>
+   <div class="meta-logo">
+    <i class="fab fa-meta">
+    </i>
+   </div>
+  </div>
+  <script>
+		const sliderInner = document.querySelector('.slider-inner');
+		const sliderImages = document.querySelectorAll('.slider-image');
+		
+		let currentIndex = 0;
+		let intervalId = null;
+		
+		function animateSlider() {
+			currentIndex++;
+			if (currentIndex >= sliderImages.length) {
+				currentIndex = 0;
+			}
+			sliderInner.style.transform = `translateX(${currentIndex * -100}%)`; /* adjust the translateX value to percentage */
+		}
+		
+		intervalId = setInterval(animateSlider, 3000); /* adjust the interval time to fit your needs */
+	</script>
+ </body>
+</html>
